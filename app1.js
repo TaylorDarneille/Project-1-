@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     const nextButton = document.querySelector("#next-btn");
     nextButton.addEventListener("click", () => {
+        clearCurrentQ;
         getQuestion();
-         
     });
 
     const submitButton = document.querySelector("#button")
@@ -95,6 +95,13 @@ const getQuestion = () => {
         questions.appendChild(li);
     }
  
+}
+
+const clearCurrentQ = () => {
+    console.log("clearing currentQ")
+    // put code in here to remove any elements 
+    // (or attributes of elements, like innerText etc)
+    // that correspond to the current question/choices
 }
   
 const getInputValue = () => {
